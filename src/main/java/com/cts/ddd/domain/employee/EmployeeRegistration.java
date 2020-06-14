@@ -19,14 +19,14 @@ public class EmployeeRegistration {
 
 	private Vehicle vehicle;
 
-	@DBRef(db="user",lazy = true)
+	/* @DBRef(db="user",lazy = true) */
 	private User user;
 
 	public EmployeeRegistration() {
 	}
 
 	@PersistenceConstructor
-	public EmployeeRegistration(String vehicleNo, Location location, Vehicle vehicle, User userId) {
+	public EmployeeRegistration(String vehicleNo, Location location, Vehicle vehicle, User user) {
 		this.vehicleNo = vehicleNo;
 		this.location = location;
 		this.vehicle = vehicle;
